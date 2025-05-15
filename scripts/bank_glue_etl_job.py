@@ -2,7 +2,7 @@ import sys
 import json
 import boto3
 from pyspark.context import SparkContext
-from pyspark.sql import SparkSession, functions as F
+from pyspark.sql import functions as F
 from pyspark.sql.window import Window
 from pyspark.sql.types import StringType
 from awsglue.context import GlueContext

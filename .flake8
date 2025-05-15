@@ -1,0 +1,16 @@
+[flake8]
+
+max-line-length = 100
+ignore = E501, W503
+
+exclude =
+    .github,
+    .pytest_cache,
+    __pycache__,
+    tests/__pycache__,
+    awsenv/,
+    .ipynb_checkpoints/
+
+show-source = true
+
+color = always
