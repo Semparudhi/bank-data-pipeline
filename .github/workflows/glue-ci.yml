@@ -5,8 +5,8 @@ on:
         branches: [ main ]
 
 jobs:
-    glue_tl:
-        runs-on: unbuntu-latest
+    glue_etl:
+        runs-on: ubuntu-latest
 
         env:
             AWS_REGION: us-east-1
@@ -33,7 +33,7 @@ jobs:
           run: |
             pytest tests/
 
-        - name: Upload EYL script & config to S3
+        - name: Upload ETL script & config to S3
           run: |
             aws s3 cp scripts/bank_glue_etl_job.py s3://$S3_BUCKET/scripts/
             aws s3 cp configs/job_params.json s3://$S3_BUCKET/configs/
