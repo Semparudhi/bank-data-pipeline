@@ -1,0 +1,5 @@
+{
+    "source_path":"raw_data/bank_transactions.csv",
+    "destination_path":"processed/",
+    "region": "us-east-1"
+}
