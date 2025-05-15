@@ -1,3 +1,4 @@
 awsenv
 data
 scripts/bank_etl_job.py
+tests/__pycache__/
