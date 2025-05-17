@@ -36,7 +36,7 @@ jobs:
 
         - name: Run tests
           run: |
-            pytest tests/
+            PYTHONPATH=$PYTHONPATH:$(pwd) pytest tests/
 
         - name: Upload ETL script & config to S3
           run: |
