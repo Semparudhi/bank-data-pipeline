@@ -15,26 +15,20 @@ This project demonstrates a production-ready data pipeline built on AWS using Py
 
 ---
 
-## Architecture Diagram
-
-![Data Pipeline Architecture](bank-etl.png)
-
----
-
 ## Project Structure
 
-bank-data-pipeline/
-├── scripts/ # PySpark Glue job scripts
-│ └── bank_glue_etl_job.py
-├── configs/
-│ └── job_params.json # Glue job input/output paths
-├── tests/
-│ └── test_transforms.py # Unit tests for UDFs and transforms
-├── .github/workflows/
-│ └── glue-ci.yml # CI/CD pipeline
-├── requirements.txt
-├── README.md
-├── .pre-commit-config.yaml
+bank-data-pipeline/<br>
+├── scripts/ # PySpark Glue job scripts<br>
+│ └── bank_glue_etl_job.py<br>
+├── configs/<br>
+│ └── job_params.json # Glue job input/output paths<br>
+├── tests/<br>
+│ └── test_transforms.py # Unit tests for UDFs and transforms<br>
+├── .github/workflows/<br>
+│ └── glue-ci.yml # CI/CD pipeline<br>
+├── requirements.txt<br>
+├── README.md<br>
+├── .pre-commit-config.yaml<br>
 ├── bank-etl.png
 
 ---
@@ -87,6 +81,13 @@ GROUP BY CustGender;
 
 ## Testing
 Unit tests validate:
-    - UDF logic (customer_categorization)
-    - Age and transaction transforms
-    - DataFrame schema and content using chispa
+- UDF logic (customer_categorization)
+- Age and transaction transforms
+- DataFrame schema and content using chispa
+
+---
+
+## Architecture Diagram
+
+![Data Pipeline Architecture](bank-etl.png)
+
